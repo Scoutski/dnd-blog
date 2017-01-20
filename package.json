@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Blog-style app for D&D recaps",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "author": "Michael J Cooper",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
