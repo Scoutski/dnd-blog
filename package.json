@@ -1,0 +1,8 @@
+{
+  "name": "dnd-blog",
+  "version": "1.0.0",
+  "description": "Blog-style app for D&D recaps",
+  "main": "index.js",
+  "author": "Michael J Cooper",
+  "license": "MIT"
+}
