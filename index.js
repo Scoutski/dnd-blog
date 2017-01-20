@@ -2,10 +2,18 @@ const PORT = process.env.PORT || 3800;
 const express = require('express');
 const app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello World!')
+// Routes
+app.get('/', (req, res) => {
+  const javascriptUrl = './bundle.js';
+
+  res.render('index.html.hbs', {
+    javascriptUrl,
+  })
 })
 
-app.listen(PORT, function () {
+// Server Config
+app.use(express.static('public'));
+app.set('view engine', 'hbs');
+app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`)
 })

@@ -1,0 +1,20 @@
+{
+  "presets": ["latest", "react", "stage-1"],
+  "plugins": [
+    "transform-runtime",
+    "transform-react-jsx-source",
+    [
+      "react-intl", {
+        "messagesDir": "./build/messages/",
+        "enforceDescriptions": true
+      }
+    ]
+  ],
+  "env": {
+      "test": {
+          "plugins": [
+              "istanbul"
+          ]
+      }
+  }
+}
