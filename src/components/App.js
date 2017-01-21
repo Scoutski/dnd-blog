@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+import StyledApp from '../styles/App.css';
 
-const App = () => (
-  <div className="myob-app">
-    <h1> REACT APP! </h1>
-  </div>
+const propTypes = {
+  children: PropTypes.object,
+};
+
+const App = ({ children }) => (
+  <StyledApp>
+    <h1>{children}</h1>
+  </StyledApp>
 );
 
+App.propTypes = propTypes;
 export default App;
